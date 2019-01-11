@@ -1,0 +1,71 @@
+body{
+	overflow-x: hidden;
+}
+.property{
+	height: 1048px;
+	position: relative;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: linear-gradient($eastBay 270px, $white 0);
+	background-size: 100% 778px;
+	&-item{
+		overflow: hidden;
+		position: relative;
+		&__text{
+			position: absolute;
+			padding: 11px 22px;
+			background-color: rgba($white, 0.52);
+			font-family: 'BrutalTypeMedium';
+			color: $eastBay;
+			font-size: 30px;
+		}
+		img{
+			width: 100%;
+			height: 478px;
+		}
+	}
+	&-item:nth-child(2n+1){
+		float: left;
+	}
+	&-item:nth-child(2n){
+		float: right;
+	}
+	&-item:first-child{
+		width: calc((100% + 12px)/2);
+		margin-bottom: 31px;
+		.property-item__text{
+			right: 20px;
+			bottom: 3px;
+		}
+		img{
+			margin-left: -20px;
+		}
+	}
+	&-item:nth-child(2){
+		width: calc((100% + 12px)/2);
+		margin-right: -20px;
+		.property-item__text{
+			left: 0px;
+			bottom: 3px;
+		}
+	}
+	&-item:nth-child(3){
+		width: calc(56%);
+		margin-bottom: 31px;
+		.property-item__text{
+			right: 0px;
+			top: 0px;
+		}
+		img{
+			margin-left: 0px;
+		}
+	}
+	&-item:last-child{
+		width: calc(44%);
+		margin-right: -27px;
+		.property-item__text{
+			left: 0px;
+			top: 0px;
+		}
+	}
+}

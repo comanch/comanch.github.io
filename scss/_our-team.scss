@@ -1,0 +1,48 @@
+.our-team{
+	height: 571px;
+	background-color: $blue;
+	position: relative;
+	h3{
+		padding: 0;
+		margin: 0;
+		text-align: center;
+		color: $black;
+		font-size: 30px;
+		font-weight: 300;
+		letter-spacing: 0.3px;
+		padding-top: 43px;
+		padding-bottom: 46px;
+	}
+	.employee{
+		position: relative;
+		&-name{
+			position: absolute;
+			bottom: -24px;
+			left: 0;
+			width: 257px;
+			text-align: center;
+			background-color: rgba($white, 0.8);
+			padding-top: 11px;
+			padding-bottom: 11px;
+			font-family: 'BrutalType';
+			color: $black;
+			font-size: 24px;
+			letter-spacing: 0.24px;
+		}
+	}
+	.next {
+	  background: url("../images/reviews/right-arrow.png") center no-repeat;
+	  right: -31px;
+	}
+
+	.prev {
+	  background: url("../images/reviews/left-arrow.png") center no-repeat;
+	  left: -55px;
+	}
+	.employees1{
+		display: none;
+	}
+	.employees2{
+		display: none;
+	}
+}

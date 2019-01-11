@@ -1,0 +1,52 @@
+.reviews{
+	height: 340px;
+	position: relative;
+	&-figures{
+		position: absolute;
+		right: -12px;
+		top: 0;
+		z-index: 0;
+	}
+	.reviews-bg{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: $eastBay;
+	}
+	.quote{
+		width: 625px;
+		margin: 0 auto;
+		padding-top: 98px;
+		color: $white;
+		font-family: 'BrutalTypeExtraLight';
+		font-size: 24px;
+		letter-spacing: 0.24px;
+		line-height: 32px;
+		position: relative;
+		&:before{
+			content: url('../images/reviews/quote-left.png');
+			position: absolute;
+			left: -120px;
+			bottom: -40px;
+		}
+		&:after{
+			content: url('../images/reviews/quote-right.png');
+			position: absolute;
+			right: -125px;
+			top: 65px;
+		}
+	}
+	.quote-author{
+		margin-left: 823px;
+		margin-top: 5px;
+		color: $white;
+		font-family: 'BrutalTypeExtraLight';
+		font-size: 24px;
+		letter-spacing: 0.24px;
+	}
+	.reviews-figures__imgbig{
+		display: none;
+	}
+}

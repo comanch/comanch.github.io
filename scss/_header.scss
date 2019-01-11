@@ -1,0 +1,155 @@
+.header{
+	height: 100vh;
+	background: #4a526d;
+	background-image:url("../images/header/header-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 7px;
+	position: relative;
+	z-index: 0;
+	&-top{
+		.header-logo-top{
+			display: block;
+			width: 80px;
+			margin: 0 auto;
+		}
+		.header-contact{
+			float: right;
+			text-align: right;
+			margin-top: 10px;
+			color: $eastBay;
+			font-size: 24px;
+			.header-tel{
+				color: $eastBay;
+				display: block;
+			}
+			.header-mail{
+				line-height: 1.6;
+				letter-spacing: 0.45px;
+				opacity: 0.8;
+				font-size: 18px;
+			}
+		}
+	}
+	.header-nav{
+		background: rgba($white, 0.51);
+		height: 60px;
+		&-menu{
+			width: 840px;
+			margin: 0 auto;
+			.left-menu{
+				float: left;
+				margin-left: 36px;
+			}
+			.right-menu{
+				float: right;
+			}
+			.menu-item{
+				display: inline-block;
+				margin-right: 90px;
+				line-height: 60px;
+				font-size: 18px;
+				.header-arrow{
+					position: relative;
+				}
+				.header-arrow::after{
+					position: absolute;
+					top: -15px;
+					right: -23px;
+					font-family: "Font Awesome 5 Free"; 
+					font-weight: 700; 
+					content: "\f107";
+					color: $eastBay;
+					font-size: 18px;
+				}
+				a{
+					color: $eastBay;
+				}
+				&:last-child{
+					margin-right: 0px;
+				}
+			}
+		}
+		.header-logo-bottom{
+			display: block;
+			width: 162px;
+			margin: 0 auto;
+			padding-top: 9px;
+		}
+	}
+	.header-social{
+		float: right;
+		margin-top: 15px;
+		.social-icon{
+			display: block;
+			&:first-child{
+				display: none;
+			}
+			&:nth-child(2){
+				margin-bottom: 17px;
+			}
+		}
+	}
+	.header-main{
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		right: 0;
+		margin: auto;
+		padding-bottom: 7px;
+		font-family: 'BrutalTypeExtraLight';
+		color: $white;
+		&__title{
+			font-size: 72px;
+			letter-spacing: 0.72px;
+			br{
+				display: none;
+			}
+		}
+		&__subtitle{
+			font-size: 30px;
+			letter-spacing: 0.3px;
+		}
+	}
+	.header-call{
+		position: absolute;
+		color: $white;
+		font-family: 'BrutalTypeExtraLight';
+		font-size: 24px;
+		line-height: 23.68px;
+		letter-spacing: 0.22px;
+		border: 1px solid $white;
+		padding: 17px 30px 20px 30px;
+		left: 50%;
+		top: 70%;
+		transform: translate(-50%, -70%);
+		transition: all 0.3s;
+		border-radius: 3px;
+		&:hover{
+			background-color: rgba($white, 0.5);
+			color: $eastBay;
+		}
+	}
+	.header-figures{
+		position: absolute;
+		background-image:url("../images/header/square-top.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		width: 583px;
+		height: 639px;
+	}
+	.header-logo-mob{
+		display: none;
+	}
+	.header-callbtn{
+		display: none;
+	}
+	.header-nav-mobile{
+		display: none;
+	}
+}

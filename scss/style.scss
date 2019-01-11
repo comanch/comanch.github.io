@@ -1,0 +1,19 @@
+body{
+	font-family: 'BrutalType';
+	font-weight: 500;
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+
+@import 'intarface';
+@import 'overlay';
+@import 'header';
+@import 'about-us';
+@import 'property';
+@import 'services';
+@import 'reviews';
+@import 'our-team';
+@import 'footer';
+@import 'media';

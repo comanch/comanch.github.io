@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'BrutalType';
+    src: url('../fonts/BrutalType-Light.eot');
+    src: url('../fonts/BrutalType-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BrutalType-Light.woff2') format('woff2'),
+        url('../fonts/BrutalType-Light.woff') format('woff'),
+        url('../fonts/BrutalType-Light.svg#BrutalType-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BrutalTypeMedium';
+    src: url('../fonts/BrutalType-Medium.eot');
+    src: url('../fonts/BrutalType-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BrutalType-Medium.woff2') format('woff2'),
+        url('../fonts/BrutalType-Medium.woff') format('woff'),
+        url('../fonts/BrutalType-Medium.svg#BrutalType-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BrutalTypeExtraLight';
+    src: url('../fonts/BrutalType-ExtraLight.eot');
+    src: url('../fonts/BrutalType-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BrutalType-ExtraLight.woff2') format('woff2'),
+        url('../fonts/BrutalType-ExtraLight.woff') format('woff'),
+        url('../fonts/BrutalType-ExtraLight.svg#BrutalType-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+

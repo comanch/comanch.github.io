@@ -1,0 +1,347 @@
+.services{
+	position: relative;
+	padding-bottom: 46px;
+	.services-figures{
+		position: absolute;
+		right: 0;
+		bottom: -3px;
+		z-index: 1;
+	}
+	.container{
+		z-index: 2;
+		display: flex;
+		position: relative;
+		align-items: inherit;
+		.services-controls{
+			position: relative;
+			.left-line{
+				opacity: 0.4;
+				position: absolute;
+				top: -5px;
+			}
+			.tabs{
+				a{
+				color: $black;
+				font-family: 'BrutalType';
+				font-size: 18px;
+				letter-spacing: 0.18px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-left: 8px;
+				}
+				li{
+					position: relative;
+					.services-tab-img{
+						position: absolute;
+						top: -55px;
+						left: 43px;
+					}
+				}
+				.t1{
+					margin-top: 219px;
+				}
+				.t2{
+					margin-top: 214px;
+				}
+				.t3{
+					margin-top: 205px;
+				}
+			}
+		}
+		.services-item{
+			width: 100%;
+			margin-top: -2px;
+			.services-slide{
+				margin-left: 76px;
+				display: block;
+				height: 900px;
+			}
+			.seller{
+				position: relative;
+				&-title{
+					color: $black;
+					font-size: 30px;
+					letter-spacing: -0.1px;
+					text-align: center;
+				}
+				&-subtitle{
+					color: $black;
+					font-size: 18px;
+					line-height: 24px;
+					letter-spacing: -0.009px;
+					text-align: center;
+					width: 659px;
+					margin: 0 auto;
+					margin-top: -3px;
+					margin-bottom: 25px;
+				}
+				.seller-descr{
+					margin-top: 50px;
+					display: flex;
+					align-items: center;
+					.seller-item__title{
+						color: $black;
+						font-family: 'BrutalTypeMedium';
+						font-size: 18px;
+						letter-spacing: 0.18px;
+					}
+					.seller-item__desr{
+						color: $black;
+						font-family: 'BrutalType';
+						font-size: 14px;
+						line-height: 18px;
+						width: 265px;
+						margin-bottom: 19px;
+					}
+					.seller-descr__center{
+						margin-left: 30px;
+					}
+					.seller-descr__right{
+						margin-left: 57px;
+						.seller-item__desr{
+							width: 235px;
+						}
+					}
+				}
+				.seller-subtitle__bottom{
+					margin-top: 20px;
+				}
+				.seller-line{
+					position: absolute;
+					opacity: 0.4;
+				}
+				.seller-line1{
+					top: 280px;
+					left: 175px;
+				}
+				.seller-line2{
+					top: 425px;
+					left: 205px;
+				}
+				.seller-line3{
+					top: 540px;
+					left: 170px;
+				}
+				.seller-line4{
+					top: 380px;
+					left: 590px;
+				}
+				.seller-line5{
+					top: 285px;
+					left: 580px;
+				}
+				.seller-line6{
+					top: 510px;
+					left: 550px;
+				}
+				.seller-line7{
+					top: 605px;
+					left: 490px;
+				}
+				.services-call{
+					color: $white;
+					font-family: 'BrutalTypeExtraLight';
+					font-size: 24px;
+					background-color: $eastBay;
+					padding: 15px 31px;
+					border-radius: 4px;
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%);
+					bottom: 5px;
+				}
+			}
+			div.customer{
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				position: relative;
+				height: 930px;
+				.services-call{
+					margin-bottom: -30px;
+				}
+				svg{
+					margin-top: 50px;
+				}
+				.services-call{
+					bottom: 10px;
+				}
+				.seller-descr__left{
+					.seller-descr__item{
+						.seller-item__desr{
+							width: 253px;
+						}
+						.seller-item__title{
+							width: 225px;
+						}
+					}
+				}
+				.seller-descr__right{
+					.customer-item__desr{
+						width: 264px !important;
+					}
+				}
+				.seller-subtitle__bottom{
+					margin-top: 38px;
+				}
+				.customer-line{
+					position: absolute;
+					opacity: 0.4;
+				}
+				.customer-line1{
+					top: 245px;
+					left: 175px;
+				}
+				.customer-line2{
+					top: 390px;
+					left: 515px;
+				}
+				.customer-line3{
+					top: 530px;
+					left: 510px;
+				}
+				.customer-line4{
+					top: 510px;
+					left: 190px;
+				}
+				.customer-line5{
+					top: 250px;
+					left: 565px;
+				}
+			}
+			.rent{
+				position: relative;
+				.seller-descr{
+					.seller-descr__item{
+						.rent-photo{
+							img{
+								box-shadow: 5px 6px 15px 1px rgba(0,0,0,0.69);								
+							}
+
+						}
+						.seller-item__desr{
+							span{
+								color: $black;
+								font-family: 'BrutalTypeMedium';
+								font-size: 18px;
+								letter-spacing: 0.18px;
+							}
+						}
+					}
+					.seller-descr__left{
+						height: 435px;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+						align-items: center;
+						.seller-descr__item{
+							.seller-item__desr{
+								width: 300px;
+							}
+						}
+					}
+					.seller-descr__right{
+						height: 526px;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+						align-items: flex-end;
+						.seller-descr__item{
+							.seller-item__desr{
+								width: 220px;
+							}
+						}
+					}
+				}
+				.seller-subtitle__bottom{
+					margin-top: 30px;
+				}
+				.rent-line{
+					position: absolute;
+					opacity: 0.4;
+				}
+				.rent-line1{
+					left: 250px;
+					top: 252px;
+				}
+				.rent-line2{
+					top: 480px;
+					left: 220px;
+				}
+				.rent-line3{
+					top: 590px;
+					left: 280px;
+				}
+				.rent-line4{
+					top: 350px;
+					left: 580px;
+				}
+				.rent-line5{
+					top: 423px;
+					left: 580px;
+				}
+				.rent-line6{
+					top: 550px;
+					left: 580px;
+				}
+			}
+		}
+	}
+	.slick-dots {
+			position: absolute;
+	    width: 25px;
+	    bottom: auto;
+	    top: 110px;
+	    left: -70px;
+	    transform: translateY(-20%);
+	    &:hover{
+	    	cursor: pointer;
+	    }
+	}
+	.slick-dots li {
+	  margin-right: -20px;
+	}
+
+	.slick-dots li img {
+
+	  margin-top: 200px;
+	  &:nth-child(2){
+	  	margin-top: 100px;
+	  }
+	  &:last-child{
+	  	margin-top: 190px;
+	  }
+	}
+
+	.slick-dots li img:nth-child(1) {
+	  display: block;
+	}
+
+	.slick-dots li img:nth-child(2) {
+	  display: none;
+	}
+
+	.slick-dots li.slick-active img:nth-child(1) {
+	  display: none;
+	}
+
+	.slick-dots li.slick-active img:nth-child(2) {
+	  display: block;
+	}
+	.services-tab-img__mob{
+		display: none;
+	}
+	.rent-images{
+		display: none;
+	}
+	.services-logo-bg{
+		display: none;
+	}
+	.rent-photo-mob{
+		display: none;
+	}
+	.services-figures__imgbig{
+		display: none;
+	}
+}

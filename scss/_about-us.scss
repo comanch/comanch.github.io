@@ -1,0 +1,60 @@
+.about-us{
+	background-color: $linkWater;
+	position: relative;
+	z-index: -2;
+	padding-bottom: 19px;
+	.about-figures{
+		position: absolute;
+		background-image:url("../images/header/square-bottom.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 542px;
+		height: 415px;
+	}
+	.container{
+		display: flex;
+		.about-logo{
+			position: absolute;
+			background-image:url("../images/about-us/about-logo.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			top: 92px;
+			left: 202px;
+			z-index: -1;
+			width: 199px;
+			height: 162px;
+		}
+		.about-text{
+			color: $black;
+			font-size: 18px;
+			line-height: 24px;
+			margin-top: 21px;
+			margin-left: 350px;
+			.about-paragraph{
+				margin-bottom: 25px;
+			}
+			.about-list{
+				margin-left: 72px;
+				margin-top: -5px;
+				margin-bottom: 25px;
+				.list-item{
+					position: relative;
+					&:before{
+						content: '';
+						display: block;
+						position: absolute;
+						height: 8px;
+						width: 8px;
+						left: -38px;
+						top: 12px;
+						border-radius: 50%;
+						background-color: $eastBay;
+					}
+				}
+			}
+		}
+	}
+}

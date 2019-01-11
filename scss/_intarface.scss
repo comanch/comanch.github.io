@@ -1,0 +1,54 @@
+$eastBay:   #414F7E;
+$white:     #fff;
+$linkWater: #E6F1FA;
+$black:		  #000;
+$blue: 			#c3e0f8;
+$footerForm: #010101;
+$footerBorder: #888;
+$silverChalice: #B2B1B1;
+
+
+a{
+	text-decoration: none;
+}
+ul,h1,h6{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: scaleY(-50%);
+  z-index: 3;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  outline: none;
+  cursor: pointer;
+}
+.next {
+  background: url("../images/reviews/right-arrow.png") center no-repeat;
+  right: 85px;
+}
+
+.prev {
+  background: url("../images/reviews/left-arrow.png") center no-repeat;
+  left: 85px;
+}
+
+.slick-list {
+    outline: none !important;
+}
+.slick-slide:focus { 
+	outline: none; 
+}
+.seller:focus { 
+	outline: none; 
+}
+.seller { 
+	outline: none; 
+}
