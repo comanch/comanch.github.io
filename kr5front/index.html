@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="shortcut icon" href="snake.ico">
+</head>
+<body>
+	<script>
+		//1 задача
+		var browserDefault = prompt('1 задание\nВведите название Вашего браузера', '');
+		var browser = browserDefault.toLowerCase();
+		if(browser === 'IE'.toLowerCase()){
+			alert('О, да у вас IE!');
+		}
+		else if((browser === 'Chrome'.toLowerCase()) || (browser === 'Firefox'.toLowerCase()) || (browser === 'Safari'.toLowerCase()) || (browser === 'Opera'.toLowerCase())  ){
+			alert('Да, и эти браузеры мы поддерживаем');
+		}
+		else{
+			alert('Мы надеемся, что и в вашем браузере все ок!');
+		}
+
+		//2 задача
+		var a = +prompt('Задача 2\nВведите число от 0 до 3','');
+
+		switch(a){
+			case 0:
+				alert(0);
+				break;
+			case 1:
+				alert(1);
+				break;
+			case 2:
+			case 3:
+				alert('2,3');
+				break;
+		}
+		//Задача 3
+
+		var time = new Date();
+
+		var hours = time.getHours();
+		var minutes = (+time.getMinutes() < 10) ? `0${time.getMinutes()}` : time.getMinutes();
+		var seconds = (+time.getSeconds() < 10) ? `0${time.getSeconds()}` : time.getSeconds();
+
+
+		document.write(`Задача 3<br>${hours}:${minutes}:${seconds}<hr>`);
+
+		//Задача 4
+
+		function sumDays(n){
+			if((n >= 1) && (n <= 1000)){
+				var now = new Date();
+				now.setDate(now.getDate() + n);
+				var result = '';
+				var day = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+				var month = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+				result = `Задача 4\nЧерез ${n} дней будет вот такая дата:\nДень недели: ${day[now.getDay()]}\nЧисло: ${now.getDate()}\nМесяц: ${month[now.getMonth()]}\nГод: ${now.getFullYear()}`;
+				document.write(`Задача 4<br><br>Через ${n} дней будет вот такая дата:<br>День недели: ${day[now.getDay()]}<br>Число: ${now.getDate()}<br>Месяц: ${month[now.getMonth()]}<br>Год: ${now.getFullYear()}<hr>`);
+				alert(result);
+				return result;
+			}
+			else{
+				alert('Вы ввели некорректные данные');
+			}
+		}
+
+		var countDays = +prompt('Задача 4\nВведите кол-во дней от 1 до 1000', '');
+
+		sumDays(countDays); 
+
+		//Задача 5
+
+		function isFirstNumber(str){
+			var res = str.match(/^\d/) ? 'Строка начинается с числа' : 'Первый символ строки не число';
+			document.write(`Задача 5<br><br>${res}<hr>`);
+			return res;
+		}
+
+		var str = "8 пингвинов и 9 карасей.";
+		isFirstNumber(str);
+
+		//Задача 6
+
+		var text = "Иван вчера потерял свою кредитку, ее номер 1178-9087-2384-8787. Поэтому он пошел в банк и описал ситуацию. Там пошли ему навстречу и выдали новую кредитку под номером: 1103-8899-0811-1722";
+		var regCard = /[0-3]{4}-\d{4}-\d{4}-\d{4}/g;
+		var resultArr = text.match(regCard);
+		var result = '';
+		for(let i = 0; i < resultArr.length; i++){
+			result+=`${resultArr[i]}<br>`;
+		}
+		document.write(`Задача 6<br><br>${result}<hr>`);
+
+		//Задача 7
+
+		function changer(tel, sign){
+			var newTel = tel.replace(/\//g, sign);
+			document.write(`Задача 7<br><br>${newTel}<hr>`);
+		}
+		var tel = "8/927/31/10/765";
+		var sign = '-';
+		changer(tel, sign);
+
+		//Задача 8
+		document.write(`Задача 8<br><br>`);
+		function charCounter(str){
+			if(str.length>0){
+			var result =  (str.length < 10) ? "В слове меньше 10 символов" :
+										(str.length > 10) ? "В слове больше 10 символов" :
+										"В слове 10 символов";
+			document.write(result);
+			}
+			else{
+				document.write("Вы ничего не ввели")
+			}
+		}
+
+		var word = prompt("8 Задача\nВведите слово", "");
+		charCounter(word);
+
+		// Задача 9
+		document.write(`<hr>Задача 9<br><br>`);
+		var square = 1;
+		for(let i = 1; i <= 7; i++){
+			document.write(`Квадрат ${i} = ${i*i}<br>`);
+		}
+		document.write(`Сумма 2-х чисел<br>`);
+		function sum(){
+			var num1 = +prompt("Задача 9\nВведите 1-е число");
+			var num2 = +prompt("Задача 9\nВведите 2-е число");
+			document.write(num1+num2);
+		}
+		sum();
+
+		// Задача 10
+		var i = 0;
+		while (i < 3) {
+		  alert(`Задача 10\nномер ${i}!`);
+		  i++;
+		}
+	</script>
+</body>
+</html>
