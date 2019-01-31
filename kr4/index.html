@@ -7,12 +7,17 @@
 </head>
 <body>
 	<script>
-		var dayCount = 365;
-		var ourPlanet = "Земля";
-		var peopleCount = "7 млрд.";
-		var sun = "Солнца";
-		document.write("1 задание<br><br>");
-		document.write("Мы живем на планете " + ourPlanet + ", она делает один оборот вокруг " + sun + " за " + dayCount + " дней.<br>Население нашей планеты состовляет примерно " + peopleCount + " человек.");
+		//1 задание
+		var browser = prompt('1 задание\nВведите название Вашего браузера', '');
+		if(browser === 'IE'){
+			alert('О, да у вас IE!');
+		}
+		else if((browser === 'Chrome') || (browser === 'Firefox') (browser === 'Safari') (browser === 'Opera')  ){
+			alert('Да, и эти браузеры мы поддерживаем');
+		}
+		else{
+			alert('Мы надеемся, что и в вашем браузере все ок!');
+		}
 
 		//2задание
 
@@ -22,90 +27,7 @@
 		(b = (a * 5)); // сначало выполняется умножение a*5, а затем присваиваем переменной b результат умножения
 		(b = (c = (b/2))); // сначало делим b на 2, затем присваиваем переменной c результат деления и затем изменяем переменную b, присваивая ей значение переменной c
 
-		//3 задание
-				var countries = ["Ukraine", "USA", "Poland", "Canada", "Australia"];
-				var population = ["42 m.", "328 m.", "38 m.", "37 m.", "25 m."];
 
-		/*		document.write(countries[0] + " - " + population[0] + "<br>" + countries[1] + " - " + population[1] + "<br>" + countries[2] + " - " + population[2] + "<br>" + countries[3] + " - " + population[3] + "<br>" + countries[4] + " - " + population[4] );*/
-				document.write("<hr><br>3 задание<br><br>");
-				for(let i = 0; i < countries.length; i++){
-					document.write(countries[i] + " - " + population[i] + "<br>");
-				}
-		//4 задание
-		document.write("<hr><br>4 задание<br><br>");
-		var fruits = ["апельсин", "банан", "груша"];
-
-		document.write("Количество фруктов - " + fruits.length + "<br>");
-		fruits.push("яблоко", "ананас");
-		fruits.unshift("грейпфрут");
-		document.write("Количество фруктов после добавления - " + fruits.length + "<br>");
-		fruits.pop();
-		fruits.shift();
-		document.write("Количество фруктов после удаления - " + fruits.length + "<br>");
-
-		//5 задание
-		document.write("<hr><br>5 задание<br><br>");
-		function del(mas){
-			mas.splice(-2,1,"ананас");
-		}
-
-		var fruits = ["яблоко", "апельсин", "груша", "гранат"];
-		del(fruits);
-		document.write(fruits + "<br>");
-
-		var fruits2 = ["банан", "мандарин", "манго"];
-		del(fruits2);
-		document.write(fruits2);
-
-		//6 задание
-		document.write("<hr><br>6 задание<br><br>");
-		var students = ["Сергей", "Матвей", "Лейла", "Алина", "Иоган"];
-
-		if(students.length >= 3){
-			document.write("Это большой массив, в котором как минимум 3 элемента");
-		}
-		else {
-			document.write("Это маленький массив, в котором менее 3-х элементов");
-		}
-
-		//7 задание
-		document.write("<hr><br>7 задание<br><br>");
-		var students = ["Дмитрий", "Алексей", "Петр", "Виктор"];
-
-		if((students.length == 4) && (students[students.length - 1] == "Виктор")){
-			document.write("Этот массив мне подходит");
-		}
-		else {
-			document.write("Этот массив мне не подходит");
-		}
-		//8 задание
-		document.write("<hr><br>8 задание<br><br>");
-		var a = 1;
-		var b = 8;
-
-		var result = (a + b < 4) ? result = 'Мало' : result = 'Много';
-		document.write(result);
-
-		//9 задание
-		document.write("<hr><br>9 задание<br><br>");
-		var login = prompt('9 задание\nВведите логин(Вася или Директор)', '');
-
-		var message = (login == 'Вася') ? message = 'Привет' :
-			(login == 'Директор') ? message = 'Здравствуйте' :
-			(login == '') ? message = 'Нет логина' :
-				message = '';
-
-		document.write(message);
-
-		//10 задание
-		document.write("<hr><br>10 задание<br><br>");
-		var official = "ECMAScript";
-		var answer = prompt("10 задание\nКаково «официальное» название JavaScript?.", "");
-
-		var str = (answer.toLowerCase() == official.toLowerCase()) ? str = "Верно" : 
-			str = "Не знаете? «ECMAScript»!";
-
-		document.write(str);
 	</script>
 </body>
 </html>
