@@ -1,0 +1,161 @@
+.deal{
+	background-color: #f8f9fb;
+	padding-top: 143px;
+	text-align: center;
+	padding-bottom: 108px;
+	.icon-presentation{
+		color: $tundora;
+		font-size: 62px;
+		font-weight: 400;
+		margin-bottom: 46px;
+	}
+	.deal-subtitle{
+		color: $silverChalice;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 4.2px;
+		margin-bottom: 10px;
+	}
+	.deal-title{
+		color: $tundora;
+		font-size: 61px;
+		font-weight: 300;
+		margin-bottom: 60px;
+		span{
+			color: $mountainMeadow;
+		}
+	}
+	.deal-main{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 16px;
+		.deal-item{
+			width: 359px;
+			height: 654px;
+			background-color: $white;
+			padding-top: 42px;
+			padding-bottom: 45px;
+			&:nth-child(2){
+				background-color: $mountainMeadow;
+				.tarif-name{
+					color: $white;
+				}
+				.circle{
+					background-color: $mountainMeadow;
+					&-inner{
+						background-color: $mountainMeadow;
+						span{
+							color: #fff;
+						}
+					}
+				}
+				.deal-period{
+					color: $white;
+				}
+				.deal-features{
+					.feature{
+						color: $white;
+						span{
+							color: $white;
+						}
+					}
+				}
+				.deal-btn{
+					background-color: $white;
+					color: $mountainMeadow;
+				}
+				.deal-info{
+					color: $white;
+				}
+			}
+			&:hover{
+				box-shadow: 0 0 32px rgba(128, 128, 122, 0.9);
+			}
+			.tarif-name{
+				color: $tundora;
+				font-size: 20px;
+				font-weight: 400;
+				text-transform: uppercase;
+				letter-spacing: 0.2px;
+				margin-bottom: 17px;
+			}
+			.circle{
+				margin: 0 auto;
+				width: 132px;
+				height: 132px;
+				border: 1px solid #dedede;
+				border-radius: 50%;
+				background-color: #fbfbfb;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 23px;
+				&-inner{
+					width: 126px;
+					height: 126px;
+					border: 1px solid #dedede;
+					border-radius: 50%;
+					background-color: #fbfbfb;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					span{
+						color: $tundora;
+						font-size: 29px;
+						font-weight: 400;
+						text-transform: uppercase;
+						letter-spacing: 0.29px;
+					}
+				}
+			}
+			.deal-period{
+				color: $osloGray;
+				font-size: 16px;
+				font-weight: 300;
+				letter-spacing: 0.16px;
+				margin-bottom: 23px;
+			}
+			.deal-features{
+				margin-bottom: 20px;
+				padding-left: 22px;
+				.feature{
+					color: $tundora;
+					font-size: 16px;
+					line-height: 37px;
+					font-weight: 700;
+					span{
+						font-weight: 400;
+						color: $osloGray;
+					}
+				}
+			}
+			.deal-btn{
+				display: block;
+				height: 51px;
+				width: 165px;
+				margin: 0 auto;
+				background-color: $mountainMeadow;
+				line-height: 51px;
+				color: $white;
+				font-size: 16px;
+				font-weight: 300;
+				margin-bottom: 25px;
+			}
+			.deal-info{
+				color: #928b8b;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 27px;
+			}
+		}
+	}
+	.contact-info{
+		font-size: 15px;
+		font-weight: 300;
+		color: #939598;
+		a{
+			color: #1abc9c;
+		}
+	}
+}

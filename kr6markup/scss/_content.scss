@@ -1,0 +1,147 @@
+.content{
+	text-align: center;
+	margin-top: 195px;
+	margin-bottom: 49px;
+	.icon-clipboard{
+		color: $tundora;
+		font-size: 63px;
+		font-weight: 400;
+		margin-bottom: 44px;
+	}
+	.content-subtitle{
+		color: $silverChalice;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 4.48px;
+		margin-bottom: 15px;
+	}
+	.content-title{
+		color: $tundora;
+		font-size: 61px;
+		font-weight: 300;
+		margin-bottom: 84px;
+		span{
+			color: $mountainMeadow;
+		}
+	}
+	.content-main{
+		display: flex;
+		justify-content: space-between;
+		.content-left{
+			.content-slider{
+				width: 747px;
+				position: relative;
+				.content-slide{
+					width: 747px;
+					height: 499px;
+					img{
+						width: 747px;
+						height: auto;
+					}
+				}
+				.slick-dots{
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					right: 25px;
+					width: 3px;
+				}
+				.slick-dots li{
+					cursor: pointer;
+					margin-bottom: 16px;
+					&:last-child{
+						margin-bottom: 0px;
+					}
+				}
+				.slick-dots li::before {
+				  content: "";  
+				  background-color: $mountainMeadow;
+				  display: inline-block; 
+				  border-radius: 50%;
+				  width: 11px;
+				  height: 11px; 
+				}
+				.slick-dots .slick-active::before{
+					background-color: $black;
+				}
+				.slick-dots li button{
+					display: none;
+				}
+			}
+		}
+		.content-right{
+			.content-right-box{
+				width: 330px;
+				height: 413px;
+				box-shadow: 0 0 5px 1px $black;
+				background-color: $white;
+				padding-left: 21px;
+				text-align: left;
+				padding-top: 7px;
+				margin-bottom: 40px;
+				.content-message{
+					padding-bottom: 25px;
+					padding-top: 17px;
+					position: relative;
+					&:after{
+						content: '';
+						position: absolute;
+						display: block;
+						width: calc(100% + 21px);
+						bottom: 0;
+						height: 1px;
+						background-color: #dcdddf;
+						left: -21px;
+					}
+					&:last-child{
+						&:after{
+							height: 0px;
+						}
+					}
+					div.content-message__subtitle{
+						font-size: 10px;
+						text-transform: uppercase;
+						letter-spacing: 3.15px;
+						font-weight: 300;
+						margin-bottom: 8px;
+					}
+					h5.content-message__title{
+						font-size: 20px;
+						letter-spacing: 2.24px;
+						font-weight: 300;
+					}
+					.content-message__text{
+						color: $tundora;
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 25px;
+					}
+					h6.content-message__title{
+						color: $black;
+						font-size: 14px;
+						font-weight: 400;
+						text-transform: uppercase;
+						letter-spacing: 3.01px;
+						margin-bottom: 11px;
+					}
+					span.content-message__subtitle{
+						color: #ddd;
+						font-size: 10px;
+						font-weight: 300;
+						text-transform: uppercase;
+						letter-spacing: 3.15px;
+					}
+				}
+			}
+			.content-right__after{
+				text-align: left;
+				color: #939598;
+				font-size: 14px;
+				font-weight: 400;
+				width: 330px;
+				line-height: 27px;
+			}
+		}
+	}
+}

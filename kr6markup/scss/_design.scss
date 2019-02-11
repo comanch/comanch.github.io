@@ -1,0 +1,97 @@
+.design{
+	background-color: #f1f1ef;
+	padding-top: 80px;
+	.subscribe{
+		width: 438px;
+		float: right;
+		padding-bottom: 88px;
+		.subscribe-title{
+			color: $tundora;
+			font-size: 46px;
+			font-weight: 300;
+			letter-spacing: 0.46px;
+			margin-bottom: 18px;
+		}
+		.subscribe-form{
+			position: relative;
+			&:after{
+				z-index: 2;
+				position: absolute;
+				font-family: "Font Awesome 5 Free"; 
+				right: 0px;
+				top: 7px;
+				content: "\f0e0";
+				color: $mountainMeadow;
+				font-size: 28px;
+				font-weight: 900;
+			}
+			input{
+				width: 458px;
+				height: 45px;
+				background-color: $white;
+				color: #c3c7d1;
+				font-size: 14px;
+				font-weight: 300;
+				line-height: 45px;
+				letter-spacing: 0.14px;
+				outline: none;
+				padding-left: 13px;
+				position: relative;
+				margin-bottom: 38px;
+			}
+		}
+		.subscribe-descr{
+			color: $osloGray;
+			font-size: 16px;
+			font-weight: 300;
+			letter-spacing: 0.16px;
+			line-height: 28px;
+		}
+	}
+	.design-container{
+		clear: both;
+		text-align: center;
+		background-color: $white;
+		padding-top: 85px;
+		padding-bottom: 80px;
+		.design-subtitle{
+			color: $osloGray;
+			font-size: 16px;
+			font-weight: 400;
+			text-transform: uppercase;
+			margin-bottom: 64px;
+			span{
+				color: $mountainMeadow;
+				font-weight: 700;
+			}
+		}
+		.design-img{
+			margin-bottom: 51px;
+		}
+		.design-title{
+			color: $tundora;
+			font-size: 47px;
+			font-weight: 300;
+			text-transform: uppercase;
+			margin-bottom: 23px;
+		}
+		.design-descr{
+			color: $osloGray;
+			font-size: 16px;
+			font-style: italic;
+			letter-spacing: 0.22px;
+			margin-bottom: 54px;
+		}
+		.buy-btn{
+			height: 50px;
+			background-color: $mountainMeadow;
+			cursor: pointer;
+			color: #fdfdfd;
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 50px;
+			padding-left: 43px;
+			padding-right: 43px;
+		}
+	}
+}

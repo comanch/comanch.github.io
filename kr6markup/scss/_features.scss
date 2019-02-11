@@ -1,0 +1,91 @@
+.features{
+	text-align: center;
+	padding-top: 105px;
+	.icon-genius{
+		color: $tundora;
+		font-size: 64px;
+		font-weight: 400;
+		margin-bottom: 45px;
+	}
+	.features-subtitle{
+		color: $silverChalice;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 4.48px;
+		margin-bottom: 14px;
+	}
+	.features-title{
+		font-size: 61px;
+		font-weight: 300;
+		margin-bottom: 83px;
+		color: $tundora;
+		span{
+			color: $mountainMeadow;
+		}
+	}
+	.features-main{
+		.features-tabs{
+			display: flex;
+			justify-content: center;
+			margin-bottom: 90px;
+			#features-item{
+				margin-right: 7px;
+				&:last-child{
+					margin-right: 0px;
+					box-shadow: 0 0 8px rgba(138, 138, 132, 0.21);
+				}
+				a{
+					display: block;
+					border-radius: 5px;
+					background-color: $white;
+					padding-left: 40px;
+					padding-right: 40px;
+					height: 55px;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 55px;
+					color: $boulder;
+					text-transform: uppercase;
+				}
+			}
+			.active{
+				a{
+					box-shadow: 0 0 8px rgba(138, 138, 132, 0.39);
+					background-color: $mountainMeadow !important;
+					color: $white !important;
+				}
+			}
+		}
+		.features-tab-content{
+			height: 490px;
+			#features-item{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				iframe{
+					width: 540px;
+				}
+				.tab-right{
+					text-align: left;
+					&-title{
+						color: $tundora;
+						line-height: 29px;
+						font-size: 27px;
+						font-weight: 300;
+						letter-spacing: 0.43px;
+						margin-bottom: 17px;
+					}
+					&-descr{
+						color: $osloGray;
+						font-size: 16px;
+						font-weight: 300;
+						letter-spacing: 0.11px;
+						line-height: 27px;
+						width: 457px;
+					}
+				}
+			}
+		}
+	}
+}

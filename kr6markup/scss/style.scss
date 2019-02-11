@@ -1,0 +1,26 @@
+body{
+	font-family: 'Ubuntu';
+	font-weight: 500;
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+
+@import 'interface';
+@import 'header';
+@import 'whatwedo';
+@import 'content';
+@import 'services';
+@import 'features';
+@import 'portfolio';
+@import 'team';
+@import 'newfeatures';
+@import 'numbers';
+@import 'design';
+@import 'deal';
+@import 'getitrn';
+@import 'sayhello';
+@import 'tryservices';
+@import 'footer';
+@import 'media';

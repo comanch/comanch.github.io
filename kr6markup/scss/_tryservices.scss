@@ -1,0 +1,48 @@
+.tryservices{
+	background-color: $mountainMeadow;
+	.container{
+		display: flex;
+		height: 158px;
+		align-items: center;
+		justify-content: space-between;
+		.left-column{
+			margin-bottom: 13px;
+			.tryservices-title{
+				color: #f7f7f7;
+				font-size: 46px;
+				font-weight: 300;
+				letter-spacing: 0.46px;
+				span{
+					color: #f7f7f7;
+					font-size: 46px;
+					font-weight: 700;
+					letter-spacing: 0.46px;
+				}
+			}
+			.tryservices-subtitle{
+				font-weight: 300;
+				letter-spacing: 0.16px;
+				font-size: 16px;
+				color: $white;
+			}
+		}
+		.purchase{
+			display: block;
+			color: $white;
+			font-size: 16px;
+			font-weight: 300;
+			letter-spacing: 0.16px;
+			height: 51px;
+			line-height: 51px;
+			border: 1px solid $white;
+			background-color: $mountainMeadow;
+			padding-left: 41px;
+			padding-right: 41px;
+			transition: all .3s;
+			&:hover{
+				background-color: rgba($white, 0.3);
+				color: $black;
+			}
+		}
+	}
+}

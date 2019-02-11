@@ -1,0 +1,36 @@
+.numbers{
+	height: 389px;
+	background-color: #141519;
+	text-align: center;
+	padding-top: 83px;
+	padding-bottom: 95px;
+	.numners-title{
+		color: #f9f9f9;
+		font-size: 27px;
+		font-weight: 400;
+		margin-bottom: 38px;
+	}
+	.numbers-items{
+		display: flex;
+		justify-content: space-around;
+		.number-item{
+			span[class^="icon-"]{
+				color: $white;
+				font-size: 47px;
+				font-weight: 400;
+				margin-bottom: 10px;
+			}
+			.number{
+				color: #f9f9f9;
+				font-weight: 400;
+				font-size: 45px;
+				margin-bottom: 25px;
+			}
+			.number-descr{
+				font-size: 18px;
+				color: #f9f9f9;
+				font-weight: 300;
+			}
+		}
+	}
+}

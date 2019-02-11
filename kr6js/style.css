@@ -1,0 +1,24 @@
+.wrapper{
+	margin-left: 20px;
+}
+.input-first{
+	margin-bottom: 10px;
+}
+.input-first input{
+	width: 38px;
+}
+.operations-first input{
+	width: 30px;
+	height: 30px;
+}
+input[type="button"]:hover{
+	cursor: pointer;
+}
+.input-third input{
+	width: 50px;
+	margin-right: 13px;
+}
+.operations-third input{
+	margin-right: 30px;
+	margin-top: 10px;
+}

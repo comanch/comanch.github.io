@@ -1,0 +1,150 @@
+.header{
+	height: 100vh;
+	background-color: rgba($black, 0.5);
+	text-align: center;
+	position: relative;
+	iframe{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	&-top{
+		&-descr{
+			padding-top: 113px;
+			margin-bottom: 25px;
+			color: $white;
+			font-size: 14px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 3.43px;
+		}
+		&-title{
+			color: $white;
+			font-size: 56px;
+			font-weight: 400;
+			letter-spacing: -0.28px;
+		}
+		&-subtitle{
+			font-size: 24px;
+			font-weight: 300;
+			letter-spacing: -0.12px;
+			margin-top: 27px;
+			color: $white;
+			margin-bottom: 71px;
+		}
+	}
+	.play-btn{
+		margin-bottom: 89px;
+		&:hover{
+			cursor: pointer;
+		}
+	}
+	.header-form{
+		margin-bottom: 40px;
+		input{
+			height: 50px;
+			font-weight: 400;
+			font-size: 18px;
+		}
+		&-name{
+			color: $gray;
+			padding-left: 37px;
+			width: 220px;
+			box-sizing: border-box;
+			margin-right: -5px;
+			outline: none;
+			border: 1px solid $mercury;
+		}
+		&-email{
+			color: $gray;
+			padding-left: 37px;
+			width: 220px;
+			box-sizing: border-box;
+			margin-right: -4px;
+			border: 1px solid $mercury;
+		}
+		&-btn{
+			cursor: pointer;
+			background-color: $mountainMeadow;
+			font-weight: 300;
+			width: 160px;
+			color: $white;
+		}
+	}
+	.header-bottom{
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 27px;
+		color: $white;
+		a{
+			color: $mountainMeadowLink;
+		}
+	}
+}
+.header-menu{
+	height: 61px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.19);
+	position: sticky;
+	background-color: rgba($white, 0.8);
+	top: 0;
+	z-index: 999;
+	.container{
+		height: inherit;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.header-logo{
+		}
+		.header-nav{
+			margin-left: -27%;
+			position: sticky;
+			top: 0;
+			ul{
+				li{
+					display: inline-block;
+					margin-right: 26px;
+					a{
+						color: $dustyGray;
+						font-size: 15px;
+						font-weight: 400;
+						text-transform: uppercase;
+						letter-spacing: 0.01px;
+					}
+				}
+			}
+		}
+		.soc-links{
+			display: flex;
+			align-items: center;
+			a:last-child{
+				display: flex;
+				.circle{
+					width: 8px;
+					height: 8px;
+					border: 1px solid $lemonGrass;
+					background-color: $white;
+					display: flex;
+					border-radius: 50%;
+					margin-right: 3px;
+					&:last-child{
+						margin-right: 0px;
+					}
+				}
+			}
+			i{
+			font-size: 27px;
+			margin-right: 20px;
+			}
+			.fa-facebook-f{
+				color: $facebook;
+			}
+			.fa-twitter{
+				color: $twitter;
+			}
+		}
+	}
+}
+.hidden-desktop{
+	display: none;
+}

@@ -1,0 +1,239 @@
+.portfolio{
+	padding-top: 105px;
+	text-align: center;
+	.icon-mobile{
+		color: $tundora;
+		font-size: 64px;
+		font-weight: 400;
+		margin-bottom: 44px;
+	}
+	.portfolio-subtitle{
+		color: $silverChalice;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 4.48px;
+		margin-bottom: 10px;
+	}
+	.portfolio-title{
+		font-size: 61px;
+		font-weight: 300;
+		color: $tundora;
+		margin-bottom: 86px;
+		span{
+			color: $mountainMeadow;
+		}
+	}
+	.portfolio-tabs{
+		display: flex;
+		justify-content: center;
+		.portfolio-tab{
+			margin-right: 8px;
+			height: 41px;
+			background-color: $mountainMeadow;
+			line-height: 41px;
+			padding-left: 23px;
+			padding-right: 23px;
+			cursor: pointer;
+			color: $white;
+			font-size: 18px;
+			font-weight: 400;
+			margin-bottom: 81px;
+			&:last-child{
+				margin-right: 0px;
+			}
+		}
+		.mixitup-control-active{
+			background-color: $black;
+		}
+	}
+	.portfolio-container{
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 1600px;
+		margin: 0 auto;
+		.mix{
+			position: relative;
+			width: 25%;
+			.portfolio-box{
+				content: '';
+				display: block;
+				height: 267px;
+			}
+			&:first-child{
+				.portfolio-box{
+					background-color: $texasRose;
+				}
+				.portfolio-info{
+					.portfolio-img{
+						background-color: $texasRose;
+					}
+					i{
+						color: #7e5001;
+					}
+				}
+			}
+			&:nth-child(2){
+				.portfolio-box{
+					background-color: $swampGreen;
+				}
+				.portfolio-info{
+					.portfolio-img{
+						background-color: $swampGreen;
+					}
+					i{
+						color: #48522e;
+					}
+				}
+			}
+			&:nth-child(3){
+				.portfolio-box{
+					background-color: $downy;
+				}
+				.portfolio-info{
+					.portfolio-img{
+						background-color: $downy;
+					}
+					i{
+						color: #1e5562;
+					}
+				}
+			}
+			&:nth-child(4){
+				.portfolio-box{
+					background-color: $swansDown;
+				}
+				.portfolio-info{
+					.portfolio-img{
+						background-color: $swansDown;
+					}
+					i{
+						color: #235c56;
+					}
+				}
+			}
+			&:nth-child(5){
+				.portfolio-box{
+					background-color: $blackSqueeze;
+				}
+				.portfolio-info{
+					.portfolio-img{
+						background-color: $blackSqueeze;
+					}
+					i{
+						color: #24425c;
+					}
+				}
+			}
+			&:nth-child(6){
+				.portfolio-box{
+					background-color: $softAmber;
+				}
+				.portfolio-info{
+					.img-descr{
+						margin-top: -3px;
+					}
+				}
+			}
+			&:nth-child(7){
+				.portfolio-box{
+					background-color: $westar;
+				}
+				.portfolio-info{
+					.portfolio-img{
+						background-color: $westar;
+					}
+					i{
+						color: #43413d;
+					}
+				}
+			}
+			&:last-child{
+				.portfolio-box{
+					background-color: $amber;
+				}
+				.portfolio-info{
+					.portfolio-img{
+						background-color: $amber;
+					}
+					i{
+						color: #806200;
+					}
+				}
+			}
+		}
+		.portfolio-info{
+			position: absolute;
+			top: -71px;
+			left: 0;
+			bottom: 71px;
+			right: 0;
+			opacity: 0;
+			transform: scale(0.8);
+			transition: opacity .3s, transform .3s;
+			text-align: left;
+			.portfolio-img{
+				width: 100%;
+				height: 100%;
+			}
+			img{
+				width: 100%;
+				height: 100%;
+				position: relative;
+			}
+			i{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 100px;
+			}
+			.works-cat{
+				position: absolute;
+				display: flex;
+				top: 20px;
+				left: 20px;
+				.work-cat{
+					a{
+						display: block;
+						height: 22px;
+						background-color: $white;
+						opacity: 0.7;
+						line-height: 22px;
+						color: $silverTree;
+						font-family: Ubuntu;
+						font-size: 13px;
+						font-weight: 400;
+						border-radius: 4px;
+						padding-left: 6px;
+						padding-right: 6px;
+						margin-right: 4px;
+					}
+				}
+			}
+			.img-descr{
+				background-color: $shark;
+				color: $white;
+				font-family: Ubuntu;
+				font-size: 17px;
+				font-weight: 400;
+				padding-left: 16px;
+				padding-top: 14px;
+				height: 71px;
+				.img-descr-title{
+					margin-bottom: 8px;
+				}
+				.img-descr-author{
+					span{
+						font-size: 16px;
+						font-weight: 700;
+					}
+				}
+			}
+		}
+		.mix:hover .portfolio-info{
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+}

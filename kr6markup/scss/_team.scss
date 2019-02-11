@@ -1,0 +1,78 @@
+.team{
+	padding-top: 105px;
+	text-align: center;
+	.icon-lifesaver{
+		color: $tundora;
+		font-size: 61px;
+		font-weight: 400;
+		margin-bottom: 47px;
+	}
+	.team-descr{
+		margin-bottom: 13px;
+		color: $silverChalice;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 4.48px;
+	}
+	.team-title{
+		color: $tundora;
+		font-size: 61px;
+		font-weight: 300;
+		margin-bottom: 70px;
+		span{
+			color: $mountainMeadow;
+		}
+	}
+	.team-members{
+		display: flex;
+		justify-content: space-between;
+		.team-member{
+			width: 360px;
+			height: 647px;
+			background-color: $white;
+			padding-top: 17px;
+			&:hover{
+				box-shadow: 0 0 18px 1px rgba(136, 136, 131, 0.6);
+			}
+			img{
+				width: 85%;
+				height: 460px;
+				margin-bottom: 30px;
+			}
+			.member-name{
+				font-weight: 400;
+				color: $tundora;
+				font-size: 27px;
+				margin-bottom: 10px;
+			}
+			.member-position{
+				color: $osloGray;
+				letter-spacing: 0.08px;
+				font-size: 19px;
+				margin-bottom: 20px;
+			}
+			.soc-links{
+				a{
+					margin-right: 34px;
+					&:last-child{
+						margin-right: 0px;
+					}
+					i{
+						font-size: 24px;
+						font-weight: 400;
+					}
+				}
+				.fa-facebook-f{
+					color: #627aad;
+				}
+				.fa-twitter{
+					color: #33bdf1;
+				}
+				.fa-linkedin-in{
+					color: #3395c5;
+				}
+			}
+		}
+	}
+}
