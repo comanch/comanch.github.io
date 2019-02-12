@@ -29,7 +29,7 @@
 			display: flex;
 			justify-content: center;
 			margin-bottom: 90px;
-			#features-item{
+			.features-item{
 				margin-right: 7px;
 				&:last-child{
 					margin-right: 0px;
@@ -59,12 +59,13 @@
 		}
 		.features-tab-content{
 			height: 490px;
-			#features-item{
+			.features-item{
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
 				iframe{
 					width: 540px;
+					border: 0px;
 				}
 				.tab-right{
 					text-align: left;
