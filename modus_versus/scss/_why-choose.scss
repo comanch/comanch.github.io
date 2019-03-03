@@ -1,0 +1,163 @@
+.why-choose{
+    background-color: $concrete;
+    margin-top: -28px;
+    position: relative;
+    z-index: 20;
+    padding-top: 8px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        .why-choose-us{
+            width: 20%;
+            margin-right: 4%;
+            .why-choose-title{
+                color: $gunsmoke;
+                font-size: 16px;
+                font-weight: 800;
+                margin: 0px;
+            }
+            .why-choose-list{
+                margin-top: 31px;
+                .why-choose-item{
+                    color: $boulder;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    &:before{
+                        font-family: "Font Awesome 5 Free"; 
+                        font-weight: 900; 
+                        color: $mandy;
+                        content: "\f061";
+                        margin-right: 6px;
+                    }
+                }
+            }
+        }
+        .features{
+            width: 47%;
+            .features-descr{
+                color: $boulder;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 24.7px;
+                margin-bottom: 61px;
+                a{
+                    color: $mandy;
+                    text-decoration: underline;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+            .features-numbers{
+                .progress-bar{
+                    position: relative;
+                    margin-right: 10px;
+                    float: left;
+                    text-align: center;
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                    .progress-percent{
+                        position: absolute;
+                        color: $gunsmoke;
+                        font-size: 30px;
+                        font-weight: 800;
+                        bottom: -20px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    .progress-precent-name{
+                        position: absolute;
+                        color: $gunsmoke;
+                        font-size: 16px;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                        bottom: -54px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+                .barOverflow{ 
+                    position: relative;
+                    overflow: hidden; 
+                    width: 120px; height: 58px; 
+                    margin-bottom: -14px;
+                }
+                .bar{
+                    position: absolute;
+                    top: 0; left: 0;
+                    width: 120px; height: 120px; 
+                    border-radius: 50%;
+                    box-sizing: border-box;
+                    border: 15px solid $light-turquoise;       
+                    border-bottom-color: $mandy; 
+                    border-right-color: $mandy;
+                    transform: rotate(45deg);
+                }
+                .progress-bar > .left {
+                    position: absolute;
+                    background: $concrete;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    left: 0;
+                    bottom: -4px;
+                    overflow: hidden;
+                }
+                .progress-bar > .right {
+                    position: absolute;
+                    background: $concrete;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    right: 0;
+                    bottom: -4px;
+                    overflow: hidden;
+                }               
+                .back {
+                    width: 15px;
+                    height: 15px;
+                    background: $concrete;
+                    position: absolute;
+                }
+            }
+        }
+        .reviews{
+            width: 23%;
+            .reviews-title{
+                margin: 0;
+                color: $gunsmoke;
+                font-size: 16px;
+                font-weight: 800;
+            }
+            .review{
+                color: $boulder;
+                font-size: 13px;
+                font-style: italic;
+                line-height: 24.7px;
+                font-weight: 400;
+                padding: 16px;
+                background-color: $alabaster;
+                margin-top: 23px;
+                position: relative;
+                &:after{
+                    position: absolute;
+                    content: '';
+                    border: 15px solid transparent;	
+                    border-top: 15px solid $alabaster; 
+                    border-right: 15px solid $alabaster;
+                    bottom: -25px;
+                    left: 18px;
+                }
+            }
+            .review-author{
+                color: $boulder;
+                font-size: 16px;
+                font-weight: 600;
+                margin-top: 10px;
+                margin-left: 60px;
+            }
+        }
+    }
+}

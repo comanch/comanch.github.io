@@ -1,0 +1,103 @@
+.header-slider{
+    background-color: $concrete;
+    padding-bottom: 24px;
+    .header-slide{
+        height: 500px;
+        position: relative;
+        img{
+            height: 100%;
+        }
+        .header-slide__text{
+            position: absolute;
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%, -30%);
+            z-index: 999;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .header-slide__title{
+                color: $white;
+                font-size: 50px;
+                font-weight: 800;
+                line-height: .9;
+                text-transform: uppercase;
+                background-color: $mandy;
+                border-radius: 7px;
+                padding-left: 9px;
+                padding-right: 9px;
+            }
+            .header-slide__subtitle{
+                color: $white;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 25.6px;
+                text-align: center;
+                background-color: $cornflower-blue;
+                width: 460px;
+                padding: 9px 31px;
+                border-radius: 7px;
+            }
+        }
+    }
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        margin-top: 21px; 
+    }
+    .slick-dots li{
+        margin-right: 10px;
+        &:last-child{
+            margin-right: 0px;
+        }
+    } 
+    .slick-dots li img:nth-child(1){
+        display: block;
+    }
+    .slick-dots li img:nth-child(2){
+        display: none;
+    }
+    .slick-dots li.slick-active img:nth-child(1){
+        display: none;
+        margin-right: 10px;
+    }
+    .slick-dots li.slick-active img:nth-child(2){
+        display: block;
+    }
+    .arrow{
+        position: absolute;
+        top: 47%;
+        transform: translateY(-47%);
+        z-index: 90;
+        border: none;
+        width: 50px;
+        height: 57px;
+        background-color: $burnt-sienna;
+        outline: none;
+        cursor: pointer;
+        color: $white;
+        -webkit-box-shadow: 0px 3px 0px 0px $mandy;
+        -moz-box-shadow: 0px 3px 0px 0px $mandy;
+        box-shadow: 0px 3px 0px 0px $mandy;
+    }
+    .next{
+        right: 0px;
+        border-radius: 5px 0px 0px 5px;
+        &::after{
+            font-family: "Font Awesome 5 Free"; 
+            content: "\f101";
+            font-size: 25px;
+            font-weight: 900;
+        }
+    }
+    .prev{
+        left: 0px;
+        border-radius: 0px 5px 5px 0px;
+        &::after{
+            font-family: "Font Awesome 5 Free"; 
+            content: "\f100";
+            font-weight: 900;
+            font-size: 25px;
+        }
+    }
+}

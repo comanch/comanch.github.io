@@ -1,0 +1,87 @@
+.who-modus{
+    padding-top: 33px;
+    text-align: center;
+    background: url(../images/bg-block.png) repeat-x top $gallery;
+    position: relative;
+    .container{
+        .who-modus-title{
+            color: $mandy;
+            font-size: 40px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 0px;
+        }
+        .who-modus-subtitle{
+            color: $boulder;
+            font-size: 13px;
+            font-weight: 400;
+            margin-top: 4px;
+            margin-bottom: 67px;
+        }
+        .who-modus-slider{
+            position: relative;
+            z-index: 10;
+        }
+        .slick-list {
+            padding-top: 10%!important;
+            padding-bottom: 10%!important;
+            padding-left: 15%!important;
+            padding-right: 15%!important;
+        }
+        .slick-track {
+            max-width: 100%!important;
+            transform: translate3d(0, 0, 0)!important;
+            perspective: 100px;
+        }
+        .slick-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            opacity: 0;
+            width: 100%!important;
+            transform: translate3d(0, 0, 0);
+            transition: transform 1s, opacity 1s;
+            img:last-child{
+                position: absolute;
+                top: 37px;
+                height: 100px;
+                left: 4px;
+                border-radius: 7px;
+                width: 452px;
+                height: auto;
+            }
+        }
+        .slick-slide{
+            width: 460px !important;
+        }
+        .slick-current {
+            opacity: 1;
+            position: relative;
+            display: block;
+            transform: translate3d(160px, 0, 20px);
+            z-index: 2;
+        }
+        .slick-snext {
+            display: block;
+            opacity: 1;
+            transform: translate3d(95%, 0%, -20px);
+            z-index: 1;
+        }
+        .slick-sprev {
+            opacity: 1;
+            transform: translate3d(-94%, 0%, -20px);
+            display: block;
+        }
+    }
+    .bg-cross{
+        position: absolute;
+        background-color: $concrete;
+        height: 255px;
+        width: 100%;
+        top: 456px;
+        z-index: 1;
+    }
+}
