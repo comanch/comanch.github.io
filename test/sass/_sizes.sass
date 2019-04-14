@@ -1,0 +1,71 @@
+.sizes
+	height: 148px
+	padding-top: 40px
+	.sizes-slider
+		#tasks_time
+			width: 86%
+			margin: 0 auto
+			height: 3px
+		.ui-widget-content 
+			background-color: $mercury
+			border: none
+		.ui-widget-header 
+			border: none
+			background-color: $easternBlue
+		.ui-slider 
+			position: relative
+			text-align: left
+		.ui-slider .ui-slider-handle
+			position: absolute
+			z-index: 2
+			width: 15px
+			height: 15px
+			border-radius: 50%
+			cursor: default
+			background-color: $easternBlue
+			border: none
+			outline: none
+		.ui-slider .ui-slider-range
+			position: absolute
+			z-index: 1
+			font-size: .7em
+			display: block
+			border: 0
+			background-position: 0 0
+		.ui-slider-horizontal 
+			height: .8em
+		.ui-slider-horizontal .ui-slider-handle
+			top: -6.5px
+			margin-left: -.6em
+		.ui-slider-horizontal .ui-slider-range 
+			top: 0
+			height: 100%
+		.ui-slider-horizontal .ui-slider-range-min 
+			left: 0
+		.ui-slider-horizontal .ui-slider-range-max 
+			right: 0
+	.sizes-box
+		width: 86%
+		margin: 0 auto
+		display: flex
+		text-align: center
+		margin-top: 16px
+		.sizes-text
+			color: $mineShaft
+			font-family: "Nexa"
+			font-size: 22px
+			font-weight: 800
+			text-transform: uppercase
+			p
+				color: $gray
+				font-family: "Open-semi"
+				font-size: 12px
+				font-weight: 400
+			&:first-child
+				margin-left: calc(12.5% - 52px)
+			&:nth-child(2)
+				margin-left: calc(25% - 93px)
+			&:nth-child(3)
+				margin-left: calc(25% - 89px)
+			&:last-child
+				margin-left: calc(25% - 95.5px)

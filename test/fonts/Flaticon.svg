@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2019-4-11: Created with FontForge (http://fontforge.org)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20170731 at Thu Apr 11 14:10:36 2019
+ By root
+
+</metadata>
+<defs>
+<font id="Flaticon" horiz-adv-x="200" >
+  <font-face 
+    font-family="Flaticon"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 5 3 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="0 -64 512 448"
+    underline-thickness="25.6"
+    underline-position="-51.2"
+    unicode-range="U+0020-F100"
+  />
+    <missing-glyph />
+    <glyph glyph-name="space" unicode=" " 
+ />
+    <glyph glyph-name="001-calendar" unicode="&#xf100;" horiz-adv-x="512" 
+d="M467 388c24.8135 0 45 -20.1865 45 -45v-362c0 -24.8135 -20.1865 -45 -45 -45h-422c-24.8135 0 -45 20.1865 -45 45v362c0 24.8135 20.1865 45 45 45h15v15c0 24.8135 20.1865 45 45 45s45 -20.1865 45 -45v-15h62v15c0 24.8135 20.1865 45 45 45s45 -20.1865 45 -45
+v-15h60v15c0 24.8135 20.1865 45 45 45s45 -20.1865 45 -45v-15h15zM392 403v-60c0 -8.27148 6.72852 -15 15 -15s15 6.72852 15 15v60c0 8.27148 -6.72852 15 -15 15s-15 -6.72852 -15 -15zM242 403v-60c0 -8.27148 6.72852 -15 15 -15s15 6.72852 15 15v60
+c0 8.27148 -6.72852 15 -15 15s-15 -6.72852 -15 -15zM90 403v-60c0 -8.27148 6.72852 -15 15 -15s15 6.72852 15 15v60c0 8.27148 -6.72852 15 -15 15s-15 -6.72852 -15 -15zM482 -19v255h-452v-255c0 -8.27148 6.72852 -15 15 -15h422c8.27148 0 15 6.72852 15 15z
+M482 266v77c0 8.27148 -6.72852 15 -15 15h-15v-15c0 -24.8135 -20.1865 -45 -45 -45s-45 20.1865 -45 45v15h-60v-15c0 -24.8135 -20.1865 -45 -45 -45s-45 20.1865 -45 45v15h-62v-15c0 -24.8135 -20.1865 -45 -45 -45s-45 20.1865 -45 45v15h-15
+c-8.27148 0 -15 -6.72852 -15 -15v-77h452zM437 206c8.28418 0 15 -6.71582 15 -15v-180c0 -8.28418 -6.71582 -15 -15 -15h-362c-8.28418 0 -15 6.71582 -15 15v180c0 8.28418 6.71582 15 15 15h362zM150 26v60h-60v-60h60zM150 116v60h-60v-60h60zM242 26v60h-62v-60h62z
+M242 116v60h-62v-60h62zM332 26v60h-60v-60h60zM332 116v60h-60v-60h60zM422 26v60h-60v-60h60zM422 116v60h-60v-60h60z" />
+  </font>
+</defs></svg>

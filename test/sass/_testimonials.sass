@@ -1,0 +1,64 @@
+.testimonials
+	padding-top: 71px
+	background-color: $easternBlue
+	text-align: center
+	&-title
+		color: $white
+		font-family: "Nexa"
+		font-size: 30px
+		font-weight: 400
+		margin-bottom: 66px
+	&-slider
+		position: relative
+		.testimonials-slide
+			.testimonial
+				width: 260px
+				color: $white
+				font-size: 18px
+				font-weight: 400
+				line-height: 25px
+				margin: 0 auto
+				margin-bottom: 24px
+				&-line
+					margin: 0 auto
+					margin-bottom: 21px
+				&-avatar
+					width: 84px
+					height: 84px
+					border: 3px solid $white
+					border-radius: 50%
+					background-color: $white
+					display: flex
+					align-items: center
+					justify-content: center
+					overflow: hidden
+					margin: 0 auto
+					margin-bottom: 7px
+					img
+						width: 100%
+				&-name
+					color: $white
+					font-family: "Open-semi"
+					font-size: 16px
+					font-weight: 400
+					margin-bottom: -3px
+				&-position
+					font-weight: 600
+					font-size: 14px
+					color: $white
+		.arrow
+		  position: absolute
+		  top: 30%
+		  z-index: 3
+		  border: none
+		  width: 2rem
+		  height: 57px
+		  outline: none
+		  cursor: pointer
+		.next 
+		  background: url("../images/testimonials/arrow.png") center no-repeat
+		  right: 0px
+		  transform: rotateY(180deg)
+		.prev 
+		  background: url("../images/testimonials/arrow.png") center no-repeat
+		  left: 0px
