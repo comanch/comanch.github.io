@@ -1,0 +1,248 @@
+body{
+  font-family: 'Roboto';
+}
+.homework2-title{
+  text-align: center;
+}
+.task1-title span{
+  font-weight: normal;
+}
+.form-caption{
+  text-align: center;
+}
+.form1{
+  display: flex;
+}
+.form1-left{
+  border-left: 3px solid #0b456a;
+  padding-left: 5px;
+}
+.form-column{
+  display: flex;
+  margin-bottom: 10px;
+}
+.form-column__name{
+  width: 40%;
+}
+.form-column__value{
+  width: 45%;
+  display: flex;
+}
+.form-column__value input, .form-column__value select{
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.value-field--single{
+  width: 100%;
+}
+.validation-field-wrapper{
+  position: relative;
+}
+.validation-field--index{
+  width: 30%;
+  margin-right: 2%;
+}
+.validation-field--phone-code{
+  width: 22%;
+  margin-right: 2%;
+}
+.validation-field--phone-operator{
+  width: 27%;
+  margin-right: 2%;
+}
+.validation-field--phone-number{
+  width: 47%;
+}
+.validation-field--phone-number input{
+  width: 100%;
+}
+.validation-field-wrapper::after{
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  content: '\e900';
+  font-family: 'icomoon';
+  color: #999;
+}
+.validation-field-wrapper.pass::after{
+  color: green;
+}
+.validation-field-wrapper.error::after{
+  color: red;
+}
+.form1-right{
+  width: 50%;
+}
+.form-column--progress-line{
+  align-items: center;
+}
+.privacy{
+  display: flex;
+  background-color: #e4e8e9;
+  padding-right: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.privacy__descr{
+  padding-left: 4px;
+}
+.pirvacy__descr-link{
+  color: #5681a1;
+  text-decoration: none;
+}
+.form1-submit-wrapper{
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+.form1-submit{
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(to top, #7f9a57, #a8d053);
+  border-radius: 5px;
+  border: 0px;
+  outline: none;
+  width: 80%;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.form1-submit span{
+  position: relative;
+}
+.form1-submit span::after{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -35px;
+  content: '';
+  border: 10px solid transparent; border-left: 10px solid #fff;
+  transition: all .3s;
+}
+.form1-submit:hover, .form1-submit:active{
+  outline: none;
+}
+.form1-submit:hover span::after{
+  right: -45px;
+}
+
+/*second form*/
+.task2{
+  margin-top: 100px;
+}
+.form2-wrapper{
+  width: 50%;
+}
+.form2-title{
+  color: #333;
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+.form2-subtitle{
+  color: #a2a2a2;
+  font-size: 12px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f3f3f3;
+}
+.form2-caption{
+  font-size: 20px;
+}
+.form2-caption--info{
+  padding-top: 6px;
+  margin-bottom: 14px;
+}
+.form2-name{
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+.form2-name>span{
+  color: red;
+}
+.form2-value-wrapper{
+  display: flex;
+}
+.form2 input{
+  border: 1px solid #d4d4d4;
+  border-radius: 3px;
+  padding: 4px;
+}
+.form2-value__name{
+  display: flex;
+  flex-direction: column;
+}
+.form2-value__name:first-child{
+  margin-right: 5px;
+}
+.form2-value{
+  font-size: 10px;
+}
+.form2-input-email{
+  margin-bottom: 17px;
+  color: #000;
+}
+.form2-input-email::placeholder{
+  color: #333;
+}
+.meal-preference, .ticket-purchase{
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f3f3f3;
+}
+.event-button{
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #c5c9ca;
+  border-radius: 5px;
+  padding: 8px 10px;
+  font-weight: bold;
+  transition: all .3s;
+  margin-top: 20px;
+}
+.event-button:hover, .event-button:active{
+  outline: none;
+}
+.event-button:hover{
+  background-color: green;
+}
+/* progress bar */
+.password-box { display: inline-block; }
+
+.password-progress {
+  height: 12px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+
+.progress-bar {
+  float: left;
+  height: 100%;
+  background-color: #337ab7;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+  -webkit-transition: width .6s ease;
+  -o-transition: width .6s ease;
+  transition: width .6s ease;
+}
+
+.bg-red {
+  background: #E74C3C;
+  border: 1px solid #E74C3C;
+}
+
+.bg-orange {
+  background: #F39C12;
+  border: 1px solid #F39C12;
+}
+
+.bg-green {
+  background: #1ABB9C;
+  border: 1px solid #1ABB9C;
+}

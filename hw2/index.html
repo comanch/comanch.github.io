@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hw2</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="homework2-title">Homework 2</h1>
+    <section class="task1">
+        <div class="container">
+            <h2 class="task1-title">Task. <span>Create following forms:</span></h2>
+            <h3 class="form-caption">Form 1</h3>
+            <form action="#" class="form1">
+                <div class="form1-left">
+                    <h4 class="form1-title">1. Личные данные</h4>
+                    <div class="form-column">
+                        <span class="form-column__name">Обращение</span>
+                        <span class="form-column__value">
+                            <label for="radio-male">Господин</label>
+                            <input type="radio" value='female' name="sex" id="radio-male" checked>
+                            <label for="radio-female">Госпожа</label>
+                            <input type="radio" value='female' name="sex" id="radio-female">
+                        </span>
+                    </div>
+                    <div class="form-column">
+                        <span class="form-column__name">Звание</span>
+                        <span class="form-column__value validation-field-wrapper">
+                            <input class='validation-field value-field--single' type="text" pattern='[A-Za-zA-Яа-я]{2,20}'>
+                        </span>
+                    </div>      
+                    <div class="form-column">
+                        <span class="form-column__name">Имя*</span>
+                        <span class="form-column__value validation-field-wrapper">
+                            <input class='validation-field  value-field--single' type="text" pattern='[A-Za-zA-Яа-я]{2,20}' required >
+                        </span>
+                    </div>  
+                    <div class="form-column">
+                        <span class="form-column__name">Фамилия*</span>
+                        <span class="form-column__value validation-field-wrapper">
+                            <input class='validation-field  value-field--single' type="text" pattern='[A-Za-zA-Яа-я]{2,20}' required>
+                        </span>
+                    </div>     
+                    <div class="form-column">
+                        <span class="form-column__name">Улица*</span>
+                        <span class="form-column__value validation-field-wrapper">
+                            <input class='validation-field value-field--single' type="text" pattern='[A-Za-zA-Яа-я\s]{2,20}' required>
+                        </span>
+                    </div>    
+                    <div class="form-column">
+                        <span class="form-column__name">Индекс/город*</span>
+                        <span class="form-column__value">
+                            <input class='validation-field validation-field--index' type="text" pattern='[0-9]{2,10}' required>
+                            <span class="validation-field-wrapper">
+                                <input type="text" class='validation-field validation-field--city'pattern='[0-9A-Za-zA-Яа-я\s]{2,20}' required>
+                            </span>
+                        </span>
+                    </div>   
+                    <div class="form-column">
+                        <span class="form-column__name">Страна*</span>
+                        <span class="form-column__value">
+                            <select class='value-field--single' name="country" id="country-select">
+                                <option value="Ukraine">Украина</option>
+                                <option value="Russia">Россия</option>
+                                <option value="Belarus">Беларусь</option>
+                            </select>
+                        </span>
+                    </div>      
+                    <div class="form-column">
+                        <span class="form-column__name">Валюта*</span>
+                        <span class="form-column__value">
+                            <select  class='value-field--single' name="currency" id="currency-select">
+                                <option value="USD">Американский доллар(USD)</option>
+                                <option value="UAH">Гривна(UAH)</option>
+                                <option value="RUB">Рубль(RUB)</option>
+                            </select>
+                        </span>
+                    </div>  
+                    <div class="form-column">
+                        <span class="form-column__name">Дата рождения*</span>
+                        <span class="form-column__value validation-field-wrapper">
+                            <input class='validation-field value-field--single' type="text" pattern='[0-9\s\.\-]{6,15}' required>
+                        </span>
+                    </div>   
+                    <div class="form-column">
+                        <span class="form-column__name">Email*</span>
+                        <span class="form-column__value validation-field-wrapper">
+                            <input class='validation-field value-field--single' type="text" pattern='^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$' required>
+                        </span>
+                    </div>   
+                    <div class="form-column">
+                        <span class="form-column__name">Мобильный телефон</span>
+                        <span class="form-column__value">
+                            <select class='validation-field--phone-code' name="phone" id="phone-select">
+                                <option value="ukr">+380</option>
+                                <option value="usa">+1</option>
+                                <option value="rus">+7</option>
+                            </select>
+                            <input class='validation-field--phone-operator' type="text" maxlength="2"  pattern='[0-9]'>
+                            <span class="form-column__value validation-field-wrapper validation-field--phone-number">
+                                <input class='validation-field' type="text"  maxlength="7"  pattern='[0-9]'>
+                            </span>
+                        </span>
+                    </div> 
+                    <div class="form-column">
+                        <span class="form-column__name">Мобильный телефон</span>
+                        <span class="form-column__value">
+                            <select class='validation-field--phone-code' name="phone" id="phone-select">
+                                <option value="ukr">+380</option>
+                                <option value="usa">+1</option>
+                                <option value="rus">+7</option>
+                            </select>
+                            <input class='validation-field--phone-operator' type="text" maxlength="2"  pattern='[0-9]'>
+                            <span class="form-column__value validation-field-wrapper validation-field--phone-number">
+                                <input class='validation-field' type="text"  maxlength="7"  pattern='[0-9]'>
+                            </span>
+                        </span>
+                    </div>                                                                                                                                     
+                </div>
+                <div class="form1-right">
+                    <h4 class="form1-title">
+                        2. Данные доступа
+                    </h4>
+                    <div class="form-column">
+                        <span class="form-column__name">Пароль*</span>
+                        <span class="form-column__value validation-field-wrapper">
+                             <input class='password validation-field value-field--single' type="password" pattern='[A-Za-zA-Яа-я0-9]{8,20}' required>
+                        </span>
+                    </div> 
+                    <div class="form-column form-column--progress">
+                        <span class="form-column__name"></span>
+                        <span class="form-column__value password-validation-descr">
+                                (8-20 символов: <br /> цифры и буквы)
+                        </span>
+                    </div> 
+                    <div class="form-column">
+                        <span class="form-column__name">Введите пароль еще раз*</span>
+                        <span class="form-column__value validation-field-wrapper">
+                                <input class='password validation-field value-field--single' type="password" pattern='[A-Za-zA-Яа-я0-9]{8,20}' required>
+                        </span>
+                    </div>        
+                    <div class="form-column">
+                        <span class="form-column__name">Контрольный вопрос*</span>
+                        <span class="form-column__value ">
+                            <select name="control-question" class='value-field--single'>
+                                <option value="first-auto">Название Вашего первого авто</option>
+                                <option value="dog-name">Имя вашего домашнего животного</option>
+                            </select>
+                        </span>
+                    </div>  
+                    <div class="form-column">
+                        <span class="form-column__name">Ваш ответ*</span>
+                        <span class="form-column__value validation-field-wrapper">
+                            <input class='password validation-field value-field--single' type="text" pattern='[A-Za-zA-Яа-я0-9]{8,20}' required>
+                        </span>
+                    </div> 
+                    <div class="privacy">
+                        <input type="checkbox" name="privacy-check" id="privacy__check">
+                        <label for='privacy__check' class="privacy__descr">
+                            Я принимаю <a href="#" class='pirvacy__descr-link'>Общие условия и положения</a> и <a href="#" class='pirvacy__descr-link'>Политику конфиденциальности.</a> 
+                            Мне уже исполнилось 18 лет, и я даю свое согласие на отправку мне рекламы и информации о продуктах компанией 
+                            bet-at-home.com. Я могу в любое время отказаться от своего согласия на получение рекламы и информации о продуктах в настройках
+                            совего счета
+                        </label>
+                    </div>  
+                    <span class="form1-submit-wrapper">
+                        <button class='form1-submit' type="submit"><span>Зарегистрироваться прямо сейчас!</span></button>                        
+                    </span>                                 
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="task2">
+        <div class="container">
+            <h3 class="form-caption form-caption--second">Form 2</h3>
+            <div class="form2-wrapper">
+                <h4 class="form2-title">Gala Event</h4>
+                <span class="form2-subtitle">This form allows you to purchase tickets to our gala event, for yourself and a guest</span>
+                <h4 class="form2-caption form2-caption--info">Your contact information</h4>
+                <form action="#" class="form2">
+                    <span class="form2-name">Name</span>
+                    <span class="form2-value-wrapper">
+                        <span class="form2-value__name">
+                            <input type="text" pattern='[A-Za-zA-Яа-я]{2,20}' required>
+                            <span class="form2-value">First Name</span>
+                        </span>
+                        <span class="form2-value__name">
+                            <input type="text" pattern='[A-Za-zA-Яа-я]{2,20}' required>
+                            <span class="form2-value">Last Name</span>
+                        </span>
+                    </span><br>
+                    <span class="form2-name">Email</span>
+                    <input pattern='^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$' required type="email" class='form2-input-email' placeholder="email@example.com">
+                    <span class="form2-name">Your meal preference <span>*</span> </span>
+                    <span class="form2-value">For your guests, please include their meal preference in the open text box</span><br><br>
+                    <div class="meal-preference">
+                        <input type="radio" name="meal" id="chicken"><label for="chicken">Chicken</label><br>
+                        <input type="radio" name="meal" id="Fish"><label for="Fish">Fish</label><br>
+                        <input type="radio" name="meal" id="Vegetarian"><label for="Vegetarian">Vegetarian</label>                       
+                    </div>
+                    <h4 class="form2-caption">Ticket purchase</h4>
+                    <span class="form2-name">Tickets <span>*</span> </span>
+                    <div class="ticket-purchase">
+                        <input type="radio" name="tickets" id="myself"><label for="myself">$100 - Myself</label><br>
+                        <input type="radio" name="tickets" id="guest"><label for="guest">$200 - Myself + guest</label>
+                    </div>
+                    <button class="event-button" type='submit'>Enter payment information</button>
+                </form>                
+            </div>
+        </div>
+    </section>
+    <script src='js/jquery.min.js'></script>
+    <script src='js/passwordStrength.js'></script>
+    <script src='js/script.js'></script>
+</body>
+</html>
